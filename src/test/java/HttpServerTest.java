@@ -12,6 +12,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import com.mycompany.lab02.HttpRequest;
+import com.mycompany.lab02.HttpResponse;
 import com.mycompany.lab02.HttpServer;
 
 public class HttpServerTest {
@@ -105,5 +107,38 @@ public class HttpServerTest {
             }
         }
     }
+
+
+    @Test
+    public void testHelloRoute() {
+        HttpRequest req = new HttpRequest("/hello", "name=Pedro");
+        HttpResponse res = new HttpResponse();
+        
+        String result = HttpServer.servicios.get("/hello").apply(req, res);
+        
+        assertEquals("Hello Pedro", result, "La ruta /hello no devolvió la respuesta esperada.");
+    }
+
+    @Test
+    public void testPiRoute() {
+        HttpRequest req = new HttpRequest("/pi", null);
+        HttpResponse res = new HttpResponse();
+        
+        String result = HttpServer.servicios.get("/pi").apply(req, res);
+        
+        assertEquals(String.valueOf(Math.PI), result, "La ruta /pi no devolvió el valor esperado de PI.");
+    }
+
+    @Test
+    public void testSumRoute() {
+        HttpRequest req = new HttpRequest("/sum", "a=10&b=20");
+        HttpResponse res = new HttpResponse();
+        
+        String result = HttpServer.servicios.get("/sum").apply(req, res);
+        
+        assertEquals("{\"a\": 10, \"b\": 20, \"sum\": 30}", result, "La ruta /sum no devolvió la suma correcta.");
+    }
+
+
 
 }

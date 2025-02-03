@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="HttpServerTest" time="2.35" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\tomas\Documents\NetBeansProjects\lab02\target\test-classes;C:\Users\tomas\Documents\NetBeansProjects\lab02\target\classes;C:\Users\tomas\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\tomas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\tomas\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\tomas\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\tomas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\tomas\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\tomas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\tomas\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\tomas\.m2\repository\com\squareup\okhttp3\okhttp\4.11.0\okhttp-4.11.0.jar;C:\Users\tomas\.m2\repository\com\squareup\okio\okio\3.2.0\okio-3.2.0.jar;C:\Users\tomas\.m2\repository\com\squareup\okio\okio-jvm\3.2.0\okio-jvm-3.2.0.jar;C:\Users\tomas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.6.20\kotlin-stdlib-1.6.20.jar;C:\Users\tomas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.6.20\kotlin-stdlib-common-1.6.20.jar;C:\Users\tomas\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\tomas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.6.20\kotlin-stdlib-jdk8-1.6.20.jar;C:\Users\tomas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.6.20\kotlin-stdlib-jdk7-1.6.20.jar;C:\Users\tomas\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2\httpclient5-5.2.jar;C:\Users\tomas\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\tomas\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\tomas\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\tomas\AppData\Local\Temp\surefire1973024223341172145\surefirebooter-20250203142113539_3.jar C:\Users\tomas\AppData\Local\Temp\surefire1973024223341172145 2025-02-03T14-21-13_404-jvmRun1 surefire-20250203142113539_1tmp surefire_0-20250203142113539_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\tomas\Documents\NetBeansProjects\lab02\target\test-classes;C:\Users\tomas\Documents\NetBeansProjects\lab02\target\classes;C:\Users\tomas\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\tomas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\tomas\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\tomas\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\tomas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\tomas\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\tomas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\tomas\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\tomas\.m2\repository\com\squareup\okhttp3\okhttp\4.11.0\okhttp-4.11.0.jar;C:\Users\tomas\.m2\repository\com\squareup\okio\okio\3.2.0\okio-3.2.0.jar;C:\Users\tomas\.m2\repository\com\squareup\okio\okio-jvm\3.2.0\okio-jvm-3.2.0.jar;C:\Users\tomas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.6.20\kotlin-stdlib-1.6.20.jar;C:\Users\tomas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.6.20\kotlin-stdlib-common-1.6.20.jar;C:\Users\tomas\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\tomas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.6.20\kotlin-stdlib-jdk8-1.6.20.jar;C:\Users\tomas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.6.20\kotlin-stdlib-jdk7-1.6.20.jar;C:\Users\tomas\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2\httpclient5-5.2.jar;C:\Users\tomas\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\tomas\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\tomas\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\tomas"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\tomas\Documents\NetBeansProjects\lab02"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\tomas\AppData\Local\Temp\surefire1973024223341172145\surefirebooter-20250203142113539_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
+    <property name="user.name" value="tomas"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\tomas\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\tomas\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="C:\Users\tomas\Documents\NetBeansProjects\lab02"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Users\tomas\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;;C:\Program Files\HP\HP One Agent;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Users\tomas\AppData\Local\Microsoft\WindowsApps;C:\Users\tomas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\tomas\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\tomas\AppData\Roaming\npm;C:\Users\tomas\AppData\Local\Programs\mongosh\;C:\Program Files\PostgreSQL\17\bin;;c:\Users\tomas\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.11+7-LTS-207"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testIndexHtmlResponse" classname="HttpServerTest" time="0.285">
+    <system-out><![CDATA[Servidor iniciado en el puerto: 32000
+Ruta solicitada: /index.html
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testImageResponse" classname="HttpServerTest" time="0.007">
+    <system-out><![CDATA[Ruta solicitada: /image.jpeg
+]]></system-out>
+  </testcase>
+  <testcase name="testCssResponse" classname="HttpServerTest" time="0.004">
+    <system-out><![CDATA[Ruta solicitada: /styles.css
+]]></system-out>
+  </testcase>
+  <testcase name="testSumRoute" classname="HttpServerTest" time="0.007"/>
+  <testcase name="testPiRoute" classname="HttpServerTest" time="0.0"/>
+  <testcase name="testNotFoundResponse" classname="HttpServerTest" time="0.004">
+    <system-out><![CDATA[Ruta solicitada: /nonexistent
+]]></system-out>
+  </testcase>
+  <testcase name="testDataResponse" classname="HttpServerTest" time="0.004">
+    <system-out><![CDATA[Ruta solicitada: /data
+Contenido recibido: {"message": "Datos recibidos correctamente"}
+
+]]></system-out>
+  </testcase>
+  <testcase name="testHelloRoute" classname="HttpServerTest" time="0.001"/>
+</testsuite>
