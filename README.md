@@ -50,10 +50,50 @@ Este proyecto es un framework web minimalista desarrollado en Java, diseñado pa
 
 ## Arquitectura
 
-## Funcionalidades principales
+## 🚀 Funcionalidades principales
 
-- **Servidor de archivos estáticos**: 
-  Sirve archivos HTML, CSS, JavaScript e imágenes desde la carpeta `webroot`.
+- **📂 Servidor de archivos estáticos**:  
+  Sirve archivos HTML, CSS, JavaScript e imágenes desde la carpeta `webroot`.  
+  - 📌 Ejemplo: `http://localhost:32000/index.html`
+
+- **🌐 Rutas REST dinámicas**:  
+  Permite definir rutas REST personalizadas con funciones lambda.  
+  - 📌 Ejemplo:
+    ```java
+    get("/hello", (req, res) -> "Hello " + req.getValues("name"));
+    ```
+  - 📌 Prueba en navegador: `http://localhost:32000/hello?name=Pedro`  
+    - 🔹 Respuesta esperada: `"Hello Pedro"`
+
+- **🔢 Operaciones matemáticas en tiempo real**:  
+  - 📌 `/pi` → Devuelve el valor de π:  
+    `http://localhost:32000/pi` → `"3.141592653589793"`
+  - 📌 `/e` → Devuelve el valor de la constante de Euler:  
+    `http://localhost:32000/e` → `"2.718281828459045"`
+  - 📌 `/sum?a=10&b=20` → Suma dos números y devuelve JSON:  
+    `http://localhost:32000/sum?a=10&b=20` → `{"a":10, "b":20, "sum":30}`
+
+- **📡 API REST con respuestas JSON**:  
+  Soporta respuestas en formato JSON para mayor integración con aplicaciones frontend.  
+  - 📌 Ejemplo:  
+    `http://localhost:32000/data`  
+    🔹 Respuesta esperada:
+    ```json
+    {"message": "Datos recibidos correctamente"}
+    ```
+
+- **📊 Manejo de parámetros en URLs (Query String)**:  
+  Extrae parámetros dinámicos de la URL y los usa en las respuestas.  
+  - 📌 Ejemplo: `/hello?name=Juan` → `"Hello Juan"`
+
+- **🛑 Manejo de errores HTTP**:  
+  Devuelve respuestas adecuadas cuando no se encuentra un archivo o una ruta.  
+  - 📌 `http://localhost:32000/no-existe`
+    - 🔹 Respuesta esperada:  
+      ```html
+      <h1>Archivo no encontrado</h1>
+      ```
+
 
 
 
@@ -64,6 +104,7 @@ Este proyecto es un framework web minimalista desarrollado en Java, diseñado pa
 
 - Puedes agregar tus propios archivos HTML, CSS o imágenes en la carpeta `webroot` para que sean servidos por el servidor.
 - Si deseas añadir nuevas rutas o funcionalidades, modifica la clase `HttpServer.java`.
+- 
 
 ## Pruebas
 
