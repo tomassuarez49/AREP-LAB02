@@ -1,0 +1,51 @@
+# Ignorar carpetas de construcción y salida de Maven
+/target/
+*.class
+
+# Archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de configuración del entorno de desarrollo
+/.idea/
+/.vscode/
+/nbproject/
+/out/
+
+# Configuración de Eclipse/IntelliJ/NetBeans
+*.iml
+*.ipr
+*.iws
+*.swp
+
+# Archivos de registro
+*.log
+
+# Dependencias locales y archivos temporales de Maven
+/.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+dependency-reduced-pom.xml
+
+# Archivos generados por el IDE o sistema operativo
+*.bak
+*.tmp
+
+# Archivos de compilación de Java
+*.class
+*.war
+*.jar
+*.ear
+
+# Archivos específicos de NetBeans
+/nbbuild/
+/build/
+/dist/
+
+# Archivos de pruebas
+/test-output/
+
+# Archivos específicos del sistema operativo
+*.swp
+*.swo
+*~
